@@ -1,0 +1,40 @@
+body,
+html {
+    background-color: whitesmoke;
+    height: 100%;
+}
+
+.jumbotron {
+   background-color: blue;
+    color: white;
+    font-family: pt sans narrow;
+    text-shadow: rgb(58, 57, 57) 0.3em 0.3em 0.3em;
+    margin-bottom: 0px;
+    height: 43%;
+}
+
+.display-4 {
+    margin-left: -30px;
+    margin-top: -60px;
+    border-bottom: 2px;
+    position: relative;
+    font-size: 80pt;
+}
+
+.lead {
+    margin-top: -10px;
+    font-size: 20pt;
+
+}
+
+.mapContainer {
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+
+#map {
+    border-left: 2px solid black;
+    height: 405px;
+    width: 50%;
+}
