@@ -28,3 +28,6 @@ benchmarks/graphs
 
 #Api keys
 keys.js
+
+#Environment
+.env
