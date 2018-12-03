@@ -7,18 +7,14 @@ head
   link(href='https://fonts.googleapis.com/css?family=Comfortaa|PT+Sans+Narrow' rel='stylesheet')
   base(href='/')
   link(rel='stylesheet' type="text/css" href='/styles/stylesheet.css')
-  title Let&apos;s use API
-.jumbotron.jumbotron-fluid
-  .container
-    h1.display-4 Where are you?
-    p.lead location and your weather
-    p.ipAddress
+  title Map&apos;s
+include includes/header.pug
 .mapContainer
     #map
 script(src="/keys/APIkeys.js")
 script(src='https://code.jquery.com/jquery-3.3.1.js' integrity='sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=' crossorigin='anonymous')
 script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous' defer)
 script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js' integrity='sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49' crossorigin='anonymous')
-script(src="/scripts/apiScripts.js")
+script(src="/scripts/apiMapScripts.js")
 script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js' integrity='sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy' crossorigin='anonymous')
-script(async='' defer='' src='https://maps.googleapis.com/maps/api/js?key='+googleKey+'&callback=initMap')
+script(async='' defer='' src='https://maps.googleapis.com/maps/api/js?key=AIzaSyD0E9tYxkqmXEL0_02Jd48B0s3qFET-S2E&callback=initMap')

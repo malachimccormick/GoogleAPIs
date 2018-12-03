@@ -50,4 +50,5 @@ function initMap(pos) {
                     infowindow.open(map, this);
     });
 }
+// initMap()
 locate()

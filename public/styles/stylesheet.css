@@ -5,6 +5,8 @@ html {
 }
 
 .jumbotron {
+    position: relative;
+    text-align: center;
    background-color: blue;
     color: white;
     font-family: pt sans narrow;
@@ -26,7 +28,28 @@ html {
     font-size: 20pt;
 
 }
-
+.nav{
+    position: relative;
+    justify-content: center;
+}
+.navContainer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-right: 40px;
+}
+.welcome{
+    display: block;
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+   
+}
+#welcome{
+    display: block;
+    font-family: fantasy;
+    font-size: 60pt;
+}
 .mapContainer {
     display: flex;
     justify-content: center;
@@ -37,4 +60,37 @@ html {
     border-left: 2px solid black;
     height: 405px;
     width: 50%;
+}
+.urlContainer{
+    display: flex;
+    justify-content:center;
+}
+.youTubeContainer {
+    display: flex;
+    justify-content: center;
+}
+input{
+    display: block;
+    position: relative;
+    width: 25%;
+    margin-top: 20px;
+}
+button{
+    display: flex;
+    border-radius: 25%;
+    background-color: silver;
+    font-size: 15pt;
+    margin-top: 22px;
+    margin-left:20px;
+    height: 30px;
+    
+}
+button:hover{
+    background-color: lightgreen;
+}
+#url{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: block;
+    text-align: center;
+    margin-top: 30px;
 }
