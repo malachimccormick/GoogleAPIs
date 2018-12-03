@@ -2,7 +2,7 @@
 $("button").click(function(){
 inputUrl = $("input").val();
 const Http = new XMLHttpRequest();
-const googleUrl = 'https://www.googleapis.com/urlshortener/v1/url?shortUrl=http://goo.gl/fbsS&key=' + googleKey
+const googleUrl = 'https://www.googleapis.com/urlshortener/v1/url?shortUrl=http://goo.gl/fbsS&key=' +googleKey
 const longUrl= {longUrl:inputUrl}
 
 $.ajax({
