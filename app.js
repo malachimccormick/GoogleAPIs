@@ -26,7 +26,10 @@ app.get('/URLshortner', (req,res)=>{
     res.render("urlshortner.pug")
 });
 app.get('/YouTube',(req,res) =>{
-    res.render("youtube.pug")
+    res.render("youtube",{
+        googleKey: process.env.GOOGLE_KEY
+    })
+    
 });
 app.listen(port)
 // app.listen(port)

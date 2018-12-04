@@ -18,7 +18,7 @@
 // }
 console.log(googleKey)
 
-function locate(pos) {
+function locate() {
 
     $.post(`https://www.googleapis.com/geolocation/v1/geolocate?key=${googleKey}` , function (data) {
         console.log(data)
