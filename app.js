@@ -12,10 +12,13 @@ app.get('/', (req, res)=>{
 });
 
 app.get('/Maps', (req,res) =>{
-    res.render("maps.pug")
-    app.locals.basedir = app.get('/public');
-        res.send(process.env.GOOGLE_KEY)
-        app.use(express.static(path.join(__dirname, '/public')));
+    res.render('maps',{
+        googleKey: process.env.GOOGLE_KEY
+    })
+    // app.locals.basedir = app.get('/public');
+
+        
+        
         
 
 });

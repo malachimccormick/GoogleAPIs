@@ -16,11 +16,11 @@
 //         }
 //     })
 // }
-
+console.log(googleKey)
 
 function locate(pos) {
 
-    $.post('https://www.googleapis.com/geolocation/v1/geolocate?key=' + googleKey , function (data) {
+    $.post(`https://www.googleapis.com/geolocation/v1/geolocate?key=${googleKey}` , function (data) {
         console.log(data)
             pos = data.location
                 console.log(pos)
@@ -35,6 +35,9 @@ function initMap(pos) {
                 zoom: 18,
                     mapTypeId: "satellite"
     });
+    //everything below this line except for locate() is not needed for a map
+    //it is there for the marker, tilting the map when viewed closely and when 
+    //you click on the marker it says here you are.
         infowindow = new google.maps.InfoWindow();
             map.setTilt(45);
     // Create a marker and set its position.
@@ -42,7 +45,6 @@ function initMap(pos) {
             map: map,
                 position: pos,
             mapTypeId:"satellite",
-        title: 'Hello World!'
     });
         google.maps.event.addListener(marker, 'click', function (data) {
             console.log(data)
