@@ -27,7 +27,7 @@ coverage
 benchmarks/graphs
 
 #Api keys
-keys.js
+Apikeys.js
 
 #Environment
 .env
