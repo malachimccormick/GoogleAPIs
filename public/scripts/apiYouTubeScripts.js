@@ -19,7 +19,7 @@ $('#submit').click(function(){
     console.log(googlekey)
 
     $.ajax({
-        url:"https://www.googleapis.com/youtube/v3",
+        url: ytURL,
         success:function (data){
             console.log(data)
         }
