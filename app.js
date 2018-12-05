@@ -17,10 +17,6 @@ app.get('/Maps', (req,res) =>{
     })
     // app.locals.basedir = app.get('/public');
 
-        
-        
-        
-
 });
 app.get('/URLshortner', (req,res)=>{
     res.render("urlshortner.pug")
