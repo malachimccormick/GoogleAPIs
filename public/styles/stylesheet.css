@@ -99,12 +99,12 @@ button:hover{
     margin-top: 30px;
 }
 .videoContainer{
-    display: block;
     display:none;
-    margin-left: 80px;
+    margin-left: 70px;
     margin-top: 20px;
 }
 #card{
+    border: double 4px bl ;
     width: 30%;
     margin: 10px;
 
