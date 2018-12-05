@@ -1,23 +1,3 @@
-
-
-// function locate(){
-//     console.log("this works")
-//     const googleURL = 'https://www.googleapis.com/geolocation/v1/geolocate?key=' + googleKey;
-//         function getLocation(data){
-//             console.log (data)
-//             pos = data.location
-//             initMap(pos)
-//         }
-//     $.ajax({
-//         url: googleURL,
-//         success: function(data){
-//             getLocation(data)
-//             console.log(data)
-//         }
-//     })
-// }
-console.log(googleKey)
-
 function locate() {
 
     $.post(`https://www.googleapis.com/geolocation/v1/geolocate?key=${googleKey}` , function (data) {
