@@ -20,7 +20,7 @@ app.get('/Maps', (req,res) =>{
 });
 app.get('/URLshortner', (req,res)=>{
     res.render("urlshortner", {
-        firebaseKey: process.env.FIREBASE_KEY
+        rebrandKey: process.env.REBRAND_KEY
     })
 });
 app.get('/YouTube',(req,res) =>{

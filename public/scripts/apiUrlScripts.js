@@ -1,7 +1,7 @@
 
 $("button").click(function(){
 userInput = $("input").val();
-const googleUrl = `https://firebasedynamiclinks.googleapis.com/v1/shortLinks?key=${firebaseKey}`
+const googleUrl = `https://api.rebrandly.com/v1/links&${rebrandKey}`
 const longUrl= {"longDynamicLink":userInput}
 
 $.ajax({
