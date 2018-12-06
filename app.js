@@ -19,7 +19,9 @@ app.get('/Maps', (req,res) =>{
 
 });
 app.get('/URLshortner', (req,res)=>{
-    res.render("urlshortner.pug")
+    res.render("urlshortner", {
+        firebaseKey: process.env.FIREBASE_KEY
+    })
 });
 app.get('/YouTube',(req,res) =>{
     res.render("youtube",{

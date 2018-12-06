@@ -7,7 +7,7 @@ html {
 .jumbotron {
     position: relative;
     text-align: center;
-    background-color: rgb(0, 0, 255);
+    background-color: rgba(155, 155, 155, 0.993);
     
     font-family: pt sans narrow;
     text-shadow: rgb(58, 57, 57) 0.3em 0.3em 0.3em;
@@ -33,13 +33,14 @@ a{
 }
 .nav{
     position: relative;
-    justify-content: center;
+    
 }
 .navContainer{
     display: flex;
     justify-content: center;
     text-align: center;
     margin-right: 40px;
+    text-decoration: underline
 }
 .welcome{
     display: block;
@@ -61,7 +62,7 @@ a{
 
 #map {
     margin-top: 50px;
-    border-left: 2px solid black;
+    border: 2px dashed black;
     height: 405px;
     width: 50%;
 }
@@ -104,7 +105,7 @@ button:hover{
     margin-top: 20px;
 }
 #card{
-    border: double 4px bl ;
+    border: double 4px black ;
     width: 30%;
     margin: 10px;
 
