@@ -1,15 +1,20 @@
 
-$("button").click(function(){
+$("#urlButton").click(function(){
 userInput = $("input").val();
-const googleUrl = `https://api.rebrandly.com/v1/links&${rebrandKey}`
+const toShortUrl = "https://api.rebrandly.com/v1/links"
 const longUrl= {"longDynamicLink":userInput}
 
 $.ajax({
-    url: googleUrl,
+    url: toShortUrl,
     type: "POST",
-    contentType: "application/json",
-    data: longUrl,
+    data: JSON.stringify({
+        "destination": userInput,
+        "domain": { "fullName": "rebrand.ly" }}),
     dataType: 'json',
+    headers: {
+        "Content-Type": "application/json",
+        "apikey": rebrandKey,
+    },
     encode: true,
         success: function (result){
             

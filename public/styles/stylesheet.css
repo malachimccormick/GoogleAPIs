@@ -90,14 +90,12 @@ button{
     height: 30px;
     
 }
-button:hover{
-    background-color: lightgreen;
-}
 #url{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: block;
     text-align: center;
     margin-top: 30px;
+    cursor: not-allowed;
 }
 .videoContainer{
     display:none;
@@ -109,4 +107,12 @@ button:hover{
     width: 30%;
     margin: 10px;
 
+}
+#yTsubmit:hover{
+   background-color: lightgreen;
+   cursor: pointer;
+}
+#urlButton, #urlInput:hover{
+    background-color: lightgreen; 
+    cursor: not-allowed;
 }

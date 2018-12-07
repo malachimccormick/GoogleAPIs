@@ -1,5 +1,5 @@
 //YouTube API that returns 10 results upon button click
-$('#submit').click(function(buildApiRequest){
+$('#yTsubmit').click(function(buildApiRequest){
     
 let input = $('#userInput').val();
 let ytURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q="+input+`&type=video&key=${googleKey}`
@@ -24,7 +24,7 @@ let ytURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResult
         let key = e.which;
         if (key == 13) // the enter key code
         {console.log("You pressed return/enter")
-            $('#submit').click();
+            $('#yTsubmit').click();
             return false;
         }
     });

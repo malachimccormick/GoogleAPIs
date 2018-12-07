@@ -12,8 +12,8 @@ head
 include includes/header.pug
 h1#url Let&apos;s shorten your URL!
 .urlContainer
-    input(type="text")
-    button(type="submit") Shorten
+    input#urlInput(type="text")
+    button#urlButton(type="submit") Shorten
 
 script(src='https://code.jquery.com/jquery-3.3.1.js' integrity='sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=' crossorigin='anonymous')
 script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
