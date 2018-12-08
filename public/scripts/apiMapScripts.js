@@ -10,7 +10,7 @@ function initMap() {
           lat: position.coords.latitude,
           lng: position.coords.longitude
                   };
-                  infoWindow.setContent("Here you are!!");
+                  ;
       getMap(pos)
     }, 
 function () {
