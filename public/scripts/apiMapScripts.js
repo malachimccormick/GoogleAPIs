@@ -18,11 +18,7 @@ function () {
     console.log("hello")
       locateOnFail()
             });
-  } else {
-  // Browser doesn't support Geolocation
-      handleLocationError(false, infoWindow); 
-      locateOnFail()
-  }
+  } 
 }
 //Error handling function
 function handleLocationError(browserHasGeolocation, infoWindow, pos) {
