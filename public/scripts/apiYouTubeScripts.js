@@ -1,4 +1,4 @@
-//YouTube API that returns 10 results upon button click
+//YouTube API that returns 10 results upon button click, you can also press enter after user input
 $('#yTsubmit').click(function(buildApiRequest){
     
 let input = $('#userInput').val();
@@ -8,12 +8,12 @@ let ytURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResult
         success:function (data){
             console.log(data)
                 video = data.items
-                //------>if you use a while loop
-                //i= -1
-                // while(i<video.length){
-                //     i+=1
-                //<---------
-            for (i=0;i<video.length;i++){
+                //if you use a while loop
+                i= -1
+                while(i<=video.length){
+                    i++
+                
+            // for (i=0;i<video.length;i++){
                 goToVideo="https://www.youtube.com/watch?v=" + video[i].id.videoId 
                 console.log(goToVideo)
                 $("#video"+i).attr("href", goToVideo)
