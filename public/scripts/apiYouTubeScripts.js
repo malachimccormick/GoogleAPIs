@@ -8,7 +8,11 @@ let ytURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResult
         success:function (data){
             console.log(data)
                 video = data.items
-            
+                //------>if you use a while loop
+                //i= -1
+                // while(i<video.length){
+                //     i+=1
+                //<---------
             for (i=0;i<video.length;i++){
                 goToVideo="https://www.youtube.com/watch?v=" + video[i].id.videoId 
                 console.log(goToVideo)
