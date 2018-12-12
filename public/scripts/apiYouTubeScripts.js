@@ -15,11 +15,11 @@ let ytURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResult
                     
                 
             // for (i=0;i<video.length;i++){
-                goToVideo="https://www.youtube.com/watch?v=" + video[i].id.videoId 
+                goToVideo="https://www.youtube.com/embed/" + video[i].id.videoId 
                 console.log(goToVideo)
 
-                $("#video"+i).attr("href", goToVideo)
-                $(".card-img-top"+i).attr("src",video[i].snippet.thumbnails.high.url )
+                $("#video"+i).attr("src", goToVideo)
+                //$(".card-img-top"+i).attr("src",video[i].snippet.thumbnails.high.url )
             i++
             $('.videoContainer').slideDown(1000)
             }
