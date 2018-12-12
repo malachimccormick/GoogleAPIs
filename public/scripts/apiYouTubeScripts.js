@@ -9,16 +9,18 @@ let ytURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResult
             console.log(data)
                 video = data.items
                 //if you use a while loop
-                i= -1
-                while(i<=video.length){
-                    i++
+                i= 0
+                while(i<video.length){
+                    console.log(i)
+                    
                 
             // for (i=0;i<video.length;i++){
                 goToVideo="https://www.youtube.com/watch?v=" + video[i].id.videoId 
                 console.log(goToVideo)
+
                 $("#video"+i).attr("href", goToVideo)
                 $(".card-img-top"+i).attr("src",video[i].snippet.thumbnails.high.url )
-            
+            i++
             $('.videoContainer').slideDown(1000)
             }
         }
